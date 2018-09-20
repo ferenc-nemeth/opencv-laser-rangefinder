@@ -39,11 +39,11 @@ Finally, the system draws a circle [[7]](#references) on the laser dot and write
 TBD
 
 ### References
-[1] https://docs.opencv.org/master/d8/dfe/classcv_1_1VideoCapture.html <br>
-[2] https://docs.opencv.org/master/d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab <br>
-[3] https://docs.opencv.org/master/d7/d1b/group__imgproc__misc.html#gae8a4a146d1ca78c626a53577199e9c57 <br>
-[4] https://docs.opencv.org/master/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a <br>
-[5] https://docs.opencv.org/master/d3/dc0/group__imgproc__shape.html#ga556a180f43cab22649c23ada36a8a139 <br>
-[6] https://en.wikipedia.org/wiki/Linear_interpolation <br>
-[7] https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#gaf10604b069374903dbd0f0488cb43670 <br>
-[8] https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#ga5126f47f883d730f633d74f07456c576
+[1] [OpenCV docs - cv::VideoCapture Class Reference](https://docs.opencv.org/master/d8/dfe/classcv_1_1VideoCapture.html) <br>
+[2] [OpenCV docs - cvtColor()](https://docs.opencv.org/master/d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab) <br>
+[3] [OpenCV docs - threshold()](https://docs.opencv.org/master/d7/d1b/group__imgproc__misc.html#gae8a4a146d1ca78c626a53577199e9c57) <br>
+[4] [OpenCV docs - findContours()](https://docs.opencv.org/master/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a) <br>
+[5] [OpenCV docs - moments()](https://docs.opencv.org/master/d3/dc0/group__imgproc__shape.html#ga556a180f43cab22649c23ada36a8a139) <br>
+[6] [Wikipedia - Linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) <br>
+[7] [OpenCV docs - circle()](https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#gaf10604b069374903dbd0f0488cb43670) <br>
+[8] [OpenCV docs - putText()](https://docs.opencv.org/master/d6/d6e/group__imgproc__draw.html#ga5126f47f883d730f633d74f07456c576)
