@@ -14,6 +14,9 @@ Many (about 10 or more) years ago I have found an interesting project: a distanc
 <img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/output.jpg" > <br>
 *Figure 1. The measured distance.*
 
+<img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/device.jpg" > <br>
+*Figure 2. The device.*
+
 
 ### How it works
 If the object (and the laser point) is further, then the dot's position is also different. This is what the rangefinder uses to get the distance.
@@ -23,11 +26,14 @@ The computer vision part is simple. It is created in OpenCV. The video stream [[
 To calculate the distance, I made some measurements of the relation between the laser dot's position and the object distance as you can see it in Figure 2. 
 
 <br><img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/measurement.png" > <br>
-*Figure 2. The measured values.*
+*Figure 3. The measured values.*
 
 From these data, I created a look-up table and used linear interpolation [[6]](#references) to calculate the values in between the measured values.
 
 Finally, the system draws a circle [[7]](#references) on the laser dot and writes a text [[8]](#references) about the distance in cm.
+
+<br><img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/activity.png" > <br>
+*Figure 3. Warkflow of the laser rangefinder.*
 
 ### How to use it
 TBD
