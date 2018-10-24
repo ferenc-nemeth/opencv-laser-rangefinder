@@ -11,14 +11,15 @@ How to measure distance with a webcam, a laser pointer and OpenCV.
 ### Introduction
 Many (about 10 or more) years ago I have found an interesting project: a distance measurement system with a webcam and a laser pointer. It's probably long gone, but after these years, I have decided to recreate it.
 
+### How it works
+[See my demostration video on youtube.](https://www.youtube.com/watch?v=bvDV_c-mpdM)
+
 <img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/output.jpg" > <br>
-*Figure 1. The measured distance.*
+*Figure 1. The measured distance in cm.*
 
 <img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/device.jpg" > <br>
 *Figure 2. The device.*
 
-
-### How it works
 If the object (and the laser point) is further, then the dot's position is also different. This is what the rangefinder uses to get the distance.
 
 The computer vision part is simple. It is created in OpenCV. The video stream [[1]](#references) is turned into grayscale with cvtColor() [[2]](#references). After that, it is turned into black and white with binary threshold() [[3]](#references). Now only the laser is visible, as a white dot, everything else is black. In the black and white picture, it is possible to find the contours with findContours() [[4]](#references) and get the moments [[5]](#references) from it. With the help of moments, we can calculate the center of the laser dot.
