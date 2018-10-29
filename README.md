@@ -12,7 +12,7 @@ How to measure distance with a webcam, a laser pointer and OpenCV.
 Many (about 10 or more) years ago I have found an interesting project: a distance measurement system with a webcam and a laser pointer. It's probably long gone, but after these years, I have decided to recreate it.
 
 ### How it works
-[See my demostration video on youtube.](https://www.youtube.com/watch?v=bvDV_c-mpdM)
+***[See my demostration video on youtube.](https://www.youtube.com/watch?v=bvDV_c-mpdM)***
 
 <img src="https://raw.githubusercontent.com/ferenc-nemeth/opencv-laser-rangefinder/master/Design/output.jpg" > <br>
 *Figure 1. The measured distance in cm.*
