@@ -1,7 +1,7 @@
 # opencv-laser-rangefinder
 How to measure distance with a webcam, a laser pointer and OpenCV.
 
-### Table of content
+### Table of Contents
 - [Introduction](#introduction)
 - [How it works](#how-it-works)
 - [How to use it](#how-to-use-it)
