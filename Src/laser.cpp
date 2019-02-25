@@ -18,7 +18,7 @@ int32_t main(void)
   static constexpr int32_t cam_number = 1;                    /**< The number of the camera, the 0 is the built in my computer. */
   static constexpr int32_t cam_width = 640;                   /**< Width of the video's resolution. */
   static constexpr int32_t cam_height = 480;                  /**< Height of the video's resolution. */
-  static constexpr int32_t threshold_min = 245;               /**< Minimum alue of the binary threshold. */
+  static constexpr int32_t threshold_min = 245;               /**< Minimum value of the binary threshold. */
   static constexpr int32_t threshold_max = 255;               /**< Maximum value of the binary threshold. */
 
   /* Look-up table for linear interpolation. If you want to make your own version, you have to re-measure these values. */
