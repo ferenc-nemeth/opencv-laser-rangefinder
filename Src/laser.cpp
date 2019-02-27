@@ -15,11 +15,11 @@
 int32_t main(void)
 {
   /* Magic constants. If you want to make your own version, you have to modify these values for your needs. */
-  static constexpr int32_t cam_number = 1;                    /**< The number of the camera, the 0 is the built in my computer. */
-  static constexpr int32_t cam_width = 640;                   /**< Width of the video's resolution. */
-  static constexpr int32_t cam_height = 480;                  /**< Height of the video's resolution. */
-  static constexpr int32_t threshold_min = 245;               /**< Minimum value of the binary threshold. */
-  static constexpr int32_t threshold_max = 255;               /**< Maximum value of the binary threshold. */
+  static constexpr int32_t cam_number     = 1;                 /**< The number of the camera, the 0 is the built in my computer. */
+  static constexpr int32_t cam_width      = 640;               /**< Width of the video's resolution. */
+  static constexpr int32_t cam_height     = 480;               /**< Height of the video's resolution. */
+  static constexpr int32_t threshold_min  = 245;               /**< Minimum value of the binary threshold. */
+  static constexpr int32_t threshold_max  = 255;               /**< Maximum value of the binary threshold. */
 
   /* Look-up table for linear interpolation. If you want to make your own version, you have to re-measure these values. */
   static std::vector<double> pixel  = {42.0, 94.0, 122.0, 139.0, 150.0, 157.0, 163.0, 168.0, 171.0};  /**< Measured values of pixels. */
@@ -40,7 +40,7 @@ int32_t main(void)
   {
     std::cerr << "No camera detected!\n";
 		return -1;
-	}
+  }
 
   /* Create the window. */
   namedWindow("Laser rangefinder", cv::WINDOW_AUTOSIZE);
@@ -73,8 +73,6 @@ int32_t main(void)
           double coord_x = m.m10 / m.m00;
           double coord_y = m.m01 / m.m00;
 
-          /* Beginning of interpolation. */
-
           /* Make sure, that we are in the look-up table's range. */
           if ((coord_y > pixel[0]) && (coord_y < pixel[pixel.size()-1]))
           {
@@ -103,7 +101,7 @@ int32_t main(void)
       {
         break;
       }
-    } 
+    }
     /* Write out if there is an error. */
     catch (std::exception& e)
     {  
